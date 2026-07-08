@@ -20,7 +20,7 @@ INSERT INTO FOURNISSEUR (ID, NOM) VALUES
 
 -- 4) Dans la table des articles, insérez les 10 articles
 INSERT INTO ARTICLE (ID, REF, DESIGNATION, PRIX, ID_FOU) VALUES
-(1, 'A01', 'Perceuse P1', '74.99', (SELECT ID FROM FOURNISSEUR WHERE NOM = 'Française d''Imports'));
+(1, 'A01', 'Perceuse P1', '74.99', (SELECT ID FROM FOURNISSEUR WHERE NOM = 'Française d''Imports')),
 (2, 'F01', 'Boulon laiton 4 x 40 mm (sachet de 10)', 2.25, 2),
 (3, 'F02', 'Boulon laiton 5 x 40 mm (sachet de 10)', 4.45, 2),
 (4, 'D01', 'Boulon laiton 5 x 40 mm (sachet de 10)', 4.40, 3),
